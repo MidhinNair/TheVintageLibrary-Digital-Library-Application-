@@ -1,0 +1,45 @@
+﻿
+p{
+    color :gainsboro;
+}
+h4 {
+    color: gainsboro;
+}
+h1 {
+    color: #fff;
+    font-size:150px;
+    font-weight:800;
+}
+h1:hover {
+    -webkit-text-stroke: 3px #fff;
+    color: transparent;
+}
+h3 {
+    color: gainsboro;
+}
+h2 {
+    color: gainsboro;
+}
+.explore a {
+    text-decoration:none;
+    display: inline-block;
+    color: gainsboro;
+    font-size: 25px;
+    border: 3px solid #fff;
+    padding: 11px 50px;
+    border-radius: 55px;
+    transition: 0.15s;
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.15);
+}
+.explore a:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+.magic {
+    display: none;
+}
+.card {
+    position: relative;
+    z-index: 1;
+    background: none;
+}

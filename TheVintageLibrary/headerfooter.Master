@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="headerfooter.master.cs" Inherits="TheVintageLibrary.headerfooter" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <%-- we can access the file all throuh out the project bcs we declare files in the master class --%>
+    <%-- bootstrap css--%>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <%-- datatables css--%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%-- fontawosome css--%>
+    <link href="fontawsome/css/all.css" rel="stylesheet" />
+    <%-- jquery--%>
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <%-- popper js--%>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <%-- bootstrap js--%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <%-- DataBase js--%>
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
+   
+    <%-- our custom  css--%>
+    <link href="css/customStylesheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    
+
+  
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="imgsvids/logo.png" width="50" height="50" />
+                    <h6>The Vintage Library</h6>
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto ">
+                        <li class="nav-item active">
+                           <asp:LinkButton class="nav-link " ID="LinkButton14" runat="server" OnClick="LinkButton14_Click">Home
+                            </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">                         
+                            <asp:LinkButton class="nav-link " ID="LinkButton13" runat="server" OnClick="LinkButton13_Click">About Us
+                            </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">   
+                            <asp:LinkButton class="nav-link " ID="LinkButton12" runat="server" OnClick="LinkButton12_Click">Terms
+                            </asp:LinkButton>
+                        </li>
+                        
+                    </ul>
+                    <%-- Main content placeholder--%>
+
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+
+                            <%-- Main content placeholder--%>
+
+                            <%-- Dynamic tag which use to server on click event--%>
+                            <asp:LinkButton class="nav-link " ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">View Books
+                            </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                        <asp:LinkButton class="nav-link " ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">User Login
+                            </asp:LinkButton> 
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link " ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Sign Up
+                            </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link " ID="LinkButton3" runat="server" Visible="False" OnClick="LinkButton3_Click">Logout
+                            </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link " ID="LinkButton11" runat="server" Visible="False">Hello User
+                            </asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+
+        <footer>
+            <div id="footer1" class="container-fluid">
+                <p class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <asp:LinkButton class=" footerlink   " ID="LinkButton5" runat="server" OnClick="LinkButton5_Click">Admin Login
+                    </asp:LinkButton>
+                    <asp:LinkButton class=" footerlink  " ID="LinkButton6" runat="server" OnClick="LinkButton6_Click" Visible="False">Autor Management
+                    </asp:LinkButton>
+                    <asp:LinkButton class=" footerlink   " ID="LinkButton7" runat="server" OnClick="LinkButton7_Click" Visible="False">Publisher Management
+                    </asp:LinkButton>
+                    <asp:LinkButton class=" footerlink   " ID="LinkButton8" runat="server" OnClick="LinkButton8_Click" Visible="False">Book Issusing
+                    </asp:LinkButton>
+                    <asp:LinkButton class=" footerlink  " ID="LinkButton9" runat="server" OnClick="LinkButton9_Click" Visible="False">Member Management
+                    </asp:LinkButton>
+                     <asp:LinkButton class=" footerlink   " ID="LinkButton10" runat="server" OnClick="LinkButton10_Click" Visible="False">Book Inventory
+                    </asp:LinkButton>
+                </p>
+            </div>
+
+            <div id="footer2" class="container-fluid">
+                <p class="text-center ">© 2023 Company,  The Vintage Library Inc by Midhin</p>
+            </div>
+
+
+        </footer>
+
+
+    </form>
+</body>
+</html>

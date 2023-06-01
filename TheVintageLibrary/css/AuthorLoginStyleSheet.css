@@ -1,0 +1,32 @@
+﻿a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+
+    background-image: url('../imgsvids/autherlogin.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Add this line to make the overlay work properly */
+}
+
+
+h3 {
+    color: #fff;
+    font-weight: 600;
+}
+
+label {
+    font-weight: 600;
+    color: #fff;
+}
+.card {
+    background-color: rgba(16, 140, 150, 0.89);
+}
+p {
+    color: #fff;
+}
